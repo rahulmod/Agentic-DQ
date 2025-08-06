@@ -1,0 +1,14 @@
+infrastructure:
+  orchestrator:
+    technology: Apache Airflow / Prefect
+    deployment: Kubernetes
+  
+  model_management:
+    api_gateway: Kong / AWS API Gateway
+    rate_limiting: Redis
+    caching: Elasticsearch
+  
+  storage:
+    metadata: PostgreSQL
+    quality_metrics: InfluxDB
+    rules: MongoDB
